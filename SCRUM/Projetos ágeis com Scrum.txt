@@ -1,0 +1,20 @@
+Introdução a Gestão de Projetos e ao Scrum
+
+Scrum - é um dos frameworks de gerenciomaneto de projetos ágeis;
+
+Desafios do Desenvolvimento de Software
+
+Objetivos de negocio ->	Processo de Desenvolvimento 
+			Concepção
+			Analise & Design
+			Testes
+			Implantação
+
+Gestão de Projetos
+
+Tradicional X Ágil
+
+Tradicional (Waterfull) - frases, preditido
+
+Ágil - partes - adaptativo
+
