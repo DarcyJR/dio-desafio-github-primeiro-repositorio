@@ -1,0 +1,142 @@
+GIT <> GitHub
+
+mkdir - criar pasta
+rmdir - remover pasta
+
+echo "ola mundo" - escreve no prompt
+echo "ola mundo" > ola.txt escreve no arquivo .txt 
+
+ls - lista o arquivo dentro do arquivo
+dir - lista o arquivo dentro do arquivo
+
+ctrl + L - limpa tela
+
+**Funcionamento do Git
+
+SHA1 Secure hash Algorit gera um conjunto de caracteres de 40 digitos incriptado.
+forma curta de representar um arquivo. (chave);
+
+openssl sha1 texto.txt 
+SHA1(texto.txt)= cf9080e8c666f5113a2ba8b25da43d7764322e8a
+SHA1(texto.txt)= 297eb1dded55c02c40852afc8a97d21019f0635b
+
+
+**Objetos 
+
+blobs - contem metadados do arquivo tipos, tamanho, \0/conteudo 
+trees - pastas armazenam blobs e apontado para os blobs e para outras trees
+commits - da significado pros arquivos e pastas junta tudo da sentido aponta para tudo
+
+blobs - echo conteudo | git hash -object --stdin > codigo...af15s..40dig
+	echo -e 'blob 9\0 conteudo' | openssl shal1
+
+echo 'conteudo' | git hash-object --stdin
+
+                  tree
+              /	    |    \
+           readme rakefile lib
+             /      |       \           
+ 	   blob   blob     tree
+                             |
+			simplegit.rb
+                             |
+                           blob
+
+blob criado, nasce um codigo sha1 qualquer mudança no blob o sha1 que muda no tree
+que aponta para o blob
+
+Commit -> tree
+       -> commit
+       -> autor
+       -> mensagem
+       -> timestamp
+
+**primeiros comando com GIT
+iniciar o versionamento
+Criar um commit
+
+git init - inicializa o repositorio, 
+git add * - adiciona todas os arquivos...
+git commit - lança o arquivo
+
+criando um repositorio
+
+ls -a //mostra arquivos escondidos "ADM" (pasta oculta)
+
+markdown
+
+GIT INIT - inicializa  o repositoria, cria o arquivo
+TRACKED OU UNTRACKED
+Unmodified - ainda nao foi modificado
+Modified - Unmodified foi modificado
+Staged - Preparando os arquivos pra fazer parte de outro agrupamento
+
+
+                                     Tracked
+	           |		           	               |
+Untracked          Unmodified         Modified            Staged
+    |                  |                 |                   |
+    |Adicionar arquivo-------------------|------------------>|
+    |                  |Edita o arquivo--|------------------>|
+    |                  |                 |'Stage' o arquivo->|
+    |<-Remove o arquivo|		 |		     |
+    |                  |<----------------|-------------Commit|
+
+
+                         Servidor (REMOTE REPOSITORY)
+
+Ambiente de Desenvolvimento
+(WORKING DIRECTORY) (STAGING AREA) (LOCAL REPOSITORY)
+ 
+
+git add nome do repositorio
+git add * para selecionar tudo e adicionar
+git add. 
+
+
+git status
+
+echo > nome pasta - cria a pasta
+
+git commid -m "nome pasta" --passa o arquivo para o staged
+
+git comnfig --global user.name "Darcy Junior"
+git comnfig --global user.email "dj@gmail.com"
+
+git config --global --unset user.email apaga o email
+git config --global --unset user.name apaga o nome
+
+
+git remote add origin link do github
+git remote -v // // mostra o diretorios pra onde o git esta apontado verificação se deu certo
+
+git push origin master empurra o arquivo pro github
+
+
+/*/*resolvendo conflitos no github */*/
+
+Arquivo clonado, modificado e devolvido pro github
+Com dois usuarios modificando o arquivo calsa conflito 
+o github da o aviso e deixa com que o des. cuide do problema
+
+puxando o arquivo do github // para correção
+**git pull origin master
+
+clonar arquivos do github
+git clone link https://github.com/python/cpython.git
+
+
+git clone url 
+
+pra dar o push tem que ir ate o repositorio (master)
+git add .
+git commit -m "comentario"
+git push origin master
+
+-----------------------------------------
+Chave SSH e Token
+
+Chave SSH - assinatura da maquina
+
+
+
