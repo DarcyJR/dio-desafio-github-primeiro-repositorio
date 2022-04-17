@@ -45,21 +45,21 @@ echo 'conteudo' | git hash-object --stdin
 blob criado, nasce um codigo sha1 qualquer mudança no blob o sha1 que muda no tree
 que aponta para o blob
 
-Commit -> tree
-       -> commit
-       -> autor
-       -> mensagem
-       -> timestamp
+Commit	-> tree
+       	-> commit
+       	-> autor
+       	-> mensagem
+       	-> timestamp
 
 **primeiros comando com GIT
-iniciar o versionamento
+Iniciar o versionamento
 Criar um commit
 
 git init - inicializa o repositorio, 
 git add * - adiciona todas os arquivos...
 git commit - lança o arquivo
 
-criando um repositorio
+criando um repositório
 
 ls -a //mostra arquivos escondidos "ADM" (pasta oculta)
 
