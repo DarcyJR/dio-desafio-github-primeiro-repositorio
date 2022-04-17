@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_grid.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <script src="script_movimento_ambiente.js" ></script>
+    <script src="script_malha_de_cubos.js" ></script>
+    <!--<script src="script_movimento_combinacao.js"></script>-->
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_grid">
+        <div class="grid_um seta">
+            <button id ="back">Voltar</button>
+        </div>
+        <div class="grid_dois seta">
+            <button id="up">Cima</button>
+        </div>
+        <div class="grid_tres seta">
+            <button id ="next">Avançar</button>
+            
+            
+        </div>
+        <div class="grid_quatro seta">
+            <button id="right">Esquerda</button>
+        </div>
+        <div class="grid_cinco">
+            <!------<Controle de setas XYZ>---------->
+                        <div class="cuboZ">
+                            <div class="cuboX">
+                                <div class="cuboY">
+                                <!----<Construção dos cubos---------->
+                                    <div class="lado" id="um">
+                                        <div class="lado" id ="local_um"></div>
+                                        <div class="lado" id ="local_dois"></div>
+                                        <div class="lado" id ="local_tres"></div>
+                                        <div class="lado" id ="local_quatro"></div>
+                                        <div class="lado" id ="local_cinco"></div>
+                                        <div class="lado" id ="local_seis"></div>
+                                        <div class="lado" id ="local_sete"></div>
+                                        <div class="lado" id ="local_oito"></div>
+                                        <div class="lado" id ="local_nove"></div>
+                                    </div>
+<!---------------------------------------------------------------------------------------------->
+                                    <div class="lado" id="dois">
+                                        <div class="lado" id ="local_um"></div>
+                                        <div class="lado" id ="local_dois"></div>
+                                        <div class="lado" id ="local_tres"></div>
+                                        <div class="lado" id ="local_quatro"></div>
+                                        <div class="lado" id ="local_cinco"></div>
+                                        <div class="lado" id ="local_seis"></div>
+                                        <div class="lado" id ="local_sete"></div>
+                                        <div class="lado" id ="local_oito"></div>
+                                        <div class="lado" id ="local_nove"></div>
+                                    </div>
+
+<!---------------------------------------------------------------------------------------------->
+                                    <div class="lado" id="tres">
+                                        <div class="lado" id ="local_um"></div>
+                                        <div class="lado" id ="local_dois"></div>
+                                        <div class="lado" id ="local_tres"></div>
+                                        <div class="lado" id ="local_quatro"></div>
+                                        <div class="lado" id ="local_cinco"></div>
+                                        <div class="lado" id ="local_seis"></div>
+                                        <div class="lado" id ="local_sete"></div>
+                                        <div class="lado" id ="local_oito"></div>
+                                        <div class="lado" id ="local_nove"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+        </div>
+        <div class="grid_seis seta">
+            <button id="left">Direita</button>
+        </div>
+        <div class="grid_sete">
+        </div>
+        <div class="grid_oito seta">
+            <button id="down">Baixo</button>
+        </div>
+        <div class="grid_nove">
+        </div>
+    </div>
+</body>
+</html>

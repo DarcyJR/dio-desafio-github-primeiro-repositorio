@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+
+.container_grid{
+    display: grid;
+    grid-template-areas: "um dois tres" "quatro cinco seis" "sete oito nove";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    
+}
+
+.grid_um{
+    grid-area: um;
+    background: rgb(117, 117, 117);
+    z-index: 1;
+}
+.grid_dois{
+    grid-area: dois;
+    background: rgb(117, 117, 117);
+    z-index: 1;
+}
+.grid_tres{
+    grid-area: tres;
+    background: rgb(117, 117, 117);
+    z-index: 1;
+}
+.grid_quatro{
+    grid-area: quatro;
+    background: rgb(117, 117, 117);
+    z-index: 1;/*deixar o cubo mais para tras das demais camadas*/
+}
+.grid_cinco{
+    grid-area: cinco; 
+    display: flex;
+    align-items: center;
+    margin: auto;
+    z-index: 0;
+}
+.grid_seis{
+    grid-area: seis;
+    background: rgb(117, 117, 117);
+    z-index: 1;
+}
+.grid_sete{
+    grid-area: sete;
+    background: rgb(117, 117, 117);
+    z-index: 1;
+}
+.grid_oito{
+    grid-area: oito;
+    background: rgb(117, 117, 117);
+    z-index: 1;
+}
+.grid_nove{
+    grid-area: nove;
+    background: rgb(117, 117, 117);
+    z-index: 1;
+}
+
+/*-----setas------*/
+.seta{ /*alinhamento no centro*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
